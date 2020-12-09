@@ -20,7 +20,7 @@ Syntax highlighted code block
 
 **Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.newmobilelife.com%2F2016%2F03%2F01%2Fsword-art-online-the-beginning-is-not-a-game%2F&psig=AOvVaw2aErh2lmCL52xOwBk-2Y5Q&ust=1607601236270000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCKiGjrjrwO0CFQAAAAAdAAAAABAD)
+[Link](url) and ![Image]()
 ```
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
