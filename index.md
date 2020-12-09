@@ -19,7 +19,7 @@ Syntax highlighted code block
 2. List
 
 **Bold** and _Italic_ and `Code` text
-
+<img src="/images/1.jpg"id="photo1">
 [Link](url) and ![Image](https://octodex.github.com/images/yaktocat.png)
 ```
 
