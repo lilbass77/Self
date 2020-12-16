@@ -2,15 +2,13 @@
 <html>
 
 <style>
-.example3{
-    background: #6db393;
-    background: radial -gradient(circle at top left, transparent 15px, #8BC34A 0 ) top left,
-                radial -gradient(circle at top right, transparent 15px, #8BC34A 0 ) top right,
-                radial -gradient(circle at bottom right, transparent 15px, #8BC34A 0 ) bottom right,
-                radial -gradient(circle at bottom left, transparent 15px, #8BC34A 0 ) bottom left;
-    background -width: 60px;
-    background -height: 30px;
-}
+    .example3 {
+        background: #6db393;
+        background: radial -gradient(circle at top left, transparent 15px, #8BC34A 0 ) top left, radial -gradient(circle at top right, transparent 15px, #8BC34A 0 ) top right, radial -gradient(circle at bottom right, transparent 15px, #8BC34A 0 ) bottom right, radial -gradient(circle at bottom left, transparent 15px, #8BC34A 0 ) bottom left;
+        background -width: 60px;
+        background -height: 30px;
+    }
+
     .button {
         display: inline-block;
         text-align: center;
@@ -54,21 +52,23 @@
         .button:focus {
             text-transform: uppercase
         }
-        .active{
-            background: black;
-1        }
+
+    .active {
+        background: red;
+        <p>目錄</p>
+    }
 </style>
+<script>
+    const element = document.querySelector('.change-btn');
+    window.addEventListener('click', function (e) {
+        document.querySelector('body').classList.toggle('active')
+    })// 點擊之後 body 切換 active class
+</script>
 <head>
-	<title>飲料東西軍</title>
+    <title>飲料東西軍</title>
 </head>
 <body>
     <h1 align="center">飲料東西軍，今晚去哪拎</h1>
-    <script>
-        const element = document.querySelector('.change-btn');
-        window.addEventListener('click', function (e) {
-            document.querySelector('body').classList.toggle('active')
-        })// 點擊之後 body 切換 active class
-    </script>
     <div align="left">
         <div style="width:100px;height:400px;background:#bc42f5;padding:30px;border:1px">
 
