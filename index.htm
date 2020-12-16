@@ -54,17 +54,26 @@
         .button:focus {
             text-transform: uppercase
         }
+        .active{
+            background: black;
+1        }
 </style>
 <head>
 	<title>飲料東西軍</title>
 </head>
 <body>
     <h1 align="center">飲料東西軍，今晚去哪拎</h1>
+    <script>
+        const element = document.querySelector('.change-btn');
+        window.addEventListener('click', function (e) {
+            document.querySelector('body').classList.toggle('active')
+        })// 點擊之後 body 切換 active class
+    </script>
     <div align="left">
         <div style="width:100px;height:400px;background:#bc42f5;padding:30px;border:1px">
 
             <p>目錄</p>
-            <button onclick="alert('Click');">
+            <button class="change-btn">
                 <span onmouseover="this.style.color = 'red';"
                       onmouseout="this.style.color = 'black';"> 果汁霸</span>
             </button>
@@ -82,7 +91,7 @@
             <p>10.可不可</p>
         </div>
     </div>
-   
+
 
     <div class=" example3 " align="center">
         allen081886@gmail.com
