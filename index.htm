@@ -11,6 +11,49 @@
     background -width: 60px;
     background -height: 30px;
 }
+    .button {
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle;
+        padding: 6px 23px;
+        border: 0px solid #2f9e80;
+        border-radius: 24px;
+        background: #56ade8;
+        background: -webkit-gradient(linear, left top, left bottom, from(#56ade8), to(#358f5f));
+        background: -moz-linear-gradient(top, #56ade8, #358f5f);
+        background: linear-gradient(to bottom, #56ade8, #358f5f);
+        -webkit-box-shadow: #5af4cc 0px 0px 40px 0px;
+        -moz-box-shadow: #5af4cc 0px 0px 40px 0px;
+        box-shadow: #5af4cc 0px 0px 40px 0px;
+        text-shadow: #266655 -1px 0px 6px;
+        font: normal normal bold 38px comic sans ms;
+        color: #e0ff2e;
+        text-decoration: none;
+        text-transform: uppercase
+    }
+
+        .button:hover {
+            border: 0px solid #3dcda6;
+            background: #67d0ff;
+            background: -webkit-gradient(linear, left top, left bottom, from(#67d0ff), to(#40ac72));
+            background: -moz-linear-gradient(top, #67d0ff, #40ac72);
+            background: linear-gradient(to bottom, #67d0ff, #40ac72);
+            color: #e0ff2e;
+            text-decoration: none;
+            text-transform: uppercase
+        }
+
+        .button:active {
+            background: #34688b;
+            background: -webkit-gradient(linear, left top, left bottom, from(#34688b), to(#358f5f));
+            background: -moz-linear-gradient(top, #34688b, #358f5f);
+            background: linear-gradient(to bottom, #34688b, #358f5f);
+            text-transform: uppercase
+        }
+
+        .button:focus {
+            text-transform: uppercase
+        }
 </style>
 <head>
 	<title>飲料東西軍</title>
@@ -19,16 +62,16 @@
     <h1 align="center">飲料東西軍，今晚去哪拎</h1>
     <div align="left">
         <div style="width:100px;height:400px;background:#bc42f5;padding:30px;border:1px">
-
             目錄
-            <button onclick="alert('Click');">
+            <button onclick="alert('');">
                 <span onmouseover="this.style.color = 'red';"
                       onmouseout="this.style.color = 'black';"> 果汁霸</span>
             </button>
-            <button onclick="alert('fuck');">
+            <button onclick="alert('');">
                 <span onmouseover="this.style.color = 'red';"
                       onmouseout="this.style.color = 'black';"> 老賴茶棧</span>
             </button>
+            <a class="button" href="#">嗨我是羅韋杰</a>
             <p>3.清心福全</p>
             <p>4.迷克夏</p>
             <p>5.進發家</p>
