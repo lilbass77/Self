@@ -55,7 +55,6 @@
 
     .active {
         background: red;
-        <p>目錄</p>
     }
 </style>
 <script>
@@ -63,6 +62,11 @@
     window.addEventListener('click', function (e) {
         document.querySelector('body').classList.toggle('active')
     })// 點擊之後 body 切換 active class
+</script>
+<script>
+    function loadXMLDoc() {
+        document.getElementById("myDiv").innerHTML = "<h2>Welcome To Ajax</h2>"
+    }
 </script>
 <head>
     <title>飲料東西軍</title>
@@ -81,6 +85,8 @@
                 <span onmouseover="this.style.color = 'red';"
                       onmouseout="this.style.color = 'black';"> 老賴茶棧</span>
             </button>
+            <div id="myDiv"><h2>Let AJAX change this text</h2></div>
+            <button type="button" onclick="loadXMLDoc()">Change Content</button>
             <p>3.清心福全</p>
             <p>4.迷克夏</p>
             <p>5.進發家</p>
