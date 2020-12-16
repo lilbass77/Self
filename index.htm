@@ -6,100 +6,99 @@
         background: #6db393;
         background: radial -gradient(circle at top left, transparent 15px, #8BC34A 0 ) top left, radial -gradient(circle at top right, transparent 15px, #8BC34A 0 ) top right, radial -gradient(circle at bottom right, transparent 15px, #8BC34A 0 ) bottom right, radial -gradient(circle at bottom left, transparent 15px, #8BC34A 0 ) bottom left;
         background -width: 60px;
-        background -height: 30px;
-    }
-
-    .button {
-        display: inline-block;
-        text-align: center;
-        vertical-align: middle;
-        padding: 6px 23px;
-        border: 0px solid #2f9e80;
-        border-radius: 24px;
-        background: #56ade8;
-        background: -webkit-gradient(linear, left top, left bottom, from(#56ade8), to(#358f5f));
-        background: -moz-linear-gradient(top, #56ade8, #358f5f);
-        background: linear-gradient(to bottom, #56ade8, #358f5f);
-        -webkit-box-shadow: #5af4cc 0px 0px 40px 0px;
-        -moz-box-shadow: #5af4cc 0px 0px 40px 0px;
-        box-shadow: #5af4cc 0px 0px 40px 0px;
-        text-shadow: #266655 -1px 0px 6px;
-        font: normal normal bold 38px comic sans ms;
-        color: #e0ff2e;
-        text-decoration: none;
-        text-transform: uppercase
-    }
-
-        .button:hover {
-            border: 0px solid #3dcda6;
-            background: #67d0ff;
-            background: -webkit-gradient(linear, left top, left bottom, from(#67d0ff), to(#40ac72));
-            background: -moz-linear-gradient(top, #67d0ff, #40ac72);
-            background: linear-gradient(to bottom, #67d0ff, #40ac72);
-            color: #e0ff2e;
-            text-decoration: none;
-            text-transform: uppercase
-        }
-
-        .button:active {
-            background: #34688b;
-            background: -webkit-gradient(linear, left top, left bottom, from(#34688b), to(#358f5f));
-            background: -moz-linear-gradient(top, #34688b, #358f5f);
-            background: linear-gradient(to bottom, #34688b, #358f5f);
-            text-transform: uppercase
-        }
-
-        .button:focus {
-            text-transform: uppercase
-        }
-
-    .active {
-        background: red;
+        background -height: 60px;
     }
 </style>
 <script>
-    const element = document.querySelector('.change-btn');
-    window.addEventListener('click', function (e) {
-        document.querySelector('body').classList.toggle('active')
-    })// 點擊之後 body 切換 active class
-</script>
-<script>
     function loadXMLDoc() {
-        document.getElementById("myDiv").innerHTML = "<h2>Welcome To Ajax</h2>"
+        document.getElementById("myDiv").innerHTML = "<h2 align="right">Welcome To Ajax</h2>"
     }
+
 </script>
+
 <head>
     <title>飲料東西軍</title>
+    <script type="text/javascript" src="http://www.sz886.com/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function (e) {
+            $(".btn_1").click(function () {
+                var index = $(".btn_1").index($(this));
+                $(".div_info div").eq(index).show().siblings().hide();
+            });
+        });
+    </script>
 </head>
 <body>
-    <h1 align="center">飲料東西軍，今晚去哪拎</h1>
+
+    <div style="border:10px orange solid;padding:1px;">
+        <h1 align="center" style="background-color:pink;height:50px;">飲料東西軍，今晚去哪拎 </h1>
+    </div>
+    <div align="right">
+        <div style="width:200px;height:400px;background:#bc42f5;padding:10px;border:0px">
+            <div class="div_info">
+                <div align="center" style="display:none">果汁霸</div>
+                <div align="center" style="display:none">老賴茶棧</div>
+                <div align="center" style="display:none">清新福全</div>
+                <div align="center" style="display:none">迷客夏</div>
+                <div align="center" style="display:none">進發家</div>
+                <div align="center" style="display:none">50嵐</div>
+                <div align="center" style="display:none">ComeBuy</div>
+                <div align="center" style="display:none">康青龍</div>
+                <div align="center" style="display:none">珍煮丹</div>
+                <div align="center" style="display:none">可不可</div>
+            </div>
+        </div>
+    </div>
     <div align="left">
         <div style="width:100px;height:400px;background:#bc42f5;padding:30px;border:1px">
 
+
             <p>目錄</p>
-            <div id="果汁爸">
-                <button class="change-btn">
-                    <span onmouseover="this.style.color = 'red';"
-                          onmouseout="this.style.color = 'black';"> 果汁霸</span>
-                </button>
-            </div>
-            <button onclick="alert('Click')">
+
+
+            <button class="btn_1" type="botton">
                 <span onmouseover="this.style.color = 'red';"
-                      onmouseout="this.style.color = 'black';"> 老賴茶棧</span>
+                      onmouseout="this.style.color = 'black';">果汁霸</span>
             </button>
-            <div id="myDiv"><h2>Let AJAX change this text</h2></div>
-            <button type="button" onclick="loadXMLDoc()">Change Content</button>
-            <p>3.清心福全</p>
-            <p>4.迷克夏</p>
-            <p>5.進發家</p>
-            <p>6.50嵐</p>
-            <p>7.comebuy</p>
-            <p>8.康青龍</p>
-            <p>9.珍煮丹</p>
-            <p>10.可不可</p>
+
+            <button class="btn_1" type="botton">
+                <span onmouseover="this.style.color = 'red';"
+                      onmouseout="this.style.color = 'black';">老賴茶棧</span>
+            </button>
+            <button class="btn_1" type="botton">
+                <span onmouseover="this.style.color = 'red';"
+                      onmouseout="this.style.color = 'black';"> 清新福全</span>
+            </button>
+            <button class="btn_1" type="botton">
+                <span onmouseover="this.style.color = 'red';"
+                      onmouseout="this.style.color = 'black';"> 迷客夏</span>
+            </button>
+            <button class="btn_1" type="botton">
+                <span onmouseover="this.style.color = 'red';"
+                      onmouseout="this.style.color = 'black';"> 進發家</span>
+            </button>
+            <button class="btn_1" type="botton">
+                <span onmouseover="this.style.color = 'red';"
+                      onmouseout="this.style.color = 'black';"> 50嵐</span>
+            </button>
+            <button class="btn_1" type="botton">
+                <span onmouseover="this.style.color = 'red';"
+                      onmouseout="this.style.color = 'black';"> ComeBuy</span>
+            </button>
+            <button class="btn_1" type="botton">
+                <span onmouseover="this.style.color = 'red';"
+                      onmouseout="this.style.color = 'black';"> 康青龍</span>
+            </button>
+            <button class="btn_1" type="botton">
+                <span onmouseover="this.style.color = 'red';"
+                      onmouseout="this.style.color = 'black';"> 珍煮丹</span>
+            </button>
+            <button class="btn_1" type="botton">
+                <span onmouseover="this.style.color = 'red';"
+                      onmouseout="this.style.color = 'black';"> 可不可</span>
+            </button>
         </div>
     </div>
-
 
     <div class=" example3 " align="center">
         allen081886@gmail.com
